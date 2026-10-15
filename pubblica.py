@@ -123,12 +123,7 @@ def gia_pubblicato(r, token, uid, versione):
     return None
 
 
-def pubblica(r, token, uid, pagine):
-    versione = r.get("versione_api") or "v23.0"
-    url = pagine.rstrip("/") + "/" + r["file"]
-    v = requests.get(url, headers={"Range": "bytes=0-1023"}, timeout=60)
-    if v.status_code not in (200, 206):
-        raise Errore(f"il video non è ancora online ({v.status_code})")
+def _contenitore(r, token, uid, url, versione):
     cont = _check(requests.post(f"{IG_API}/{versione}/{uid}/media", timeout=120, data={
         "media_type": "REELS", "video_url": url, "caption": r.get("didascalia", ""),
         "share_to_feed": "true" if r.get("condividi_nel_feed", True) else "false",
@@ -138,12 +133,34 @@ def pubblica(r, token, uid, pagine):
         st = _check(requests.get(f"{IG_API}/{versione}/{cid}", timeout=30, params={
             "fields": "status_code,status", "access_token": token}))
         if st.get("status_code") == "FINISHED":
-            break
+            return cid
         if st.get("status_code") in ("ERROR", "EXPIRED"):
             raise Errore(f"Instagram ha rifiutato il video: {st.get('status')}")
         time.sleep(5)
-    else:
-        raise Errore("Instagram non ha finito di elaborare il video")
+    raise Errore("Instagram non ha finito di elaborare il video")
+
+
+def pubblica(r, token, uid, indirizzi):
+    """indirizzi: GitHub Pages e raw. Uso il primo che risponde e che Instagram accetta."""
+    versione = r.get("versione_api") or "v23.0"
+    errori, cid = [], None
+    for base in indirizzi:
+        if not base:
+            continue
+        url = base.rstrip("/") + "/" + r["file"]
+        try:
+            v = requests.get(url, headers={"Range": "bytes=0-1023"}, timeout=60)
+            if v.status_code not in (200, 206):
+                raise Errore(f"il video non è online ({v.status_code})")
+            cid = _contenitore(r, token, uid, url, versione)
+            break
+        except Exception as e:  # noqa: BLE001
+            log(f"{url}: {e}")
+            errori.append(str(e))
+            if "token" in str(e).lower():
+                break
+    if not cid:
+        raise Errore(" | ".join(errori) or "nessun indirizzo del video")
     pub = _check(requests.post(f"{IG_API}/{versione}/{uid}/media_publish", timeout=60, data={
         "creation_id": cid, "access_token": token}))
     try:
@@ -156,7 +173,7 @@ def pubblica(r, token, uid, pagine):
 def main():
     cambiati = []
     cfg = leggi("impostazioni.json") if Path("impostazioni.json").exists() else {}
-    pagine = cfg.get("pages_url", "")
+    indirizzi = [cfg.get("pages_url", ""), cfg.get("raw_url", "")]
     uid = os.environ.get("IG_USER_ID", "")
     dovuti = []
     for f in sorted(Path("programma").glob("*.json")):
@@ -187,7 +204,7 @@ def main():
         if not salva_su_github([str(f)], f"Pubblico {f.stem}"):
             continue
         try:
-            link = pubblica(r, token, uid, pagine)
+            link = pubblica(r, token, uid, indirizzi)
             r.update(stato="pubblicato", link=link, pubblicato_il=ADESSO.isoformat(), errore="")
             log(f"Pubblicato {f.stem}: {link}")
         except Exception as e:  # noqa: BLE001
