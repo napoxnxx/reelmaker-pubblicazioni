@@ -1,0 +1,31 @@
+# Creato da ReelMaker: pubblica su Instagram i reel programmati, anche a PC spento.
+name: Pubblica reel programmati
+on:
+  schedule:
+    - cron: "4,19,34,49 * * * *"   # non allo scoccare dell'ora: GitHub è meno affollato
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: pubblica-reel
+  cancel-in-progress: false
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests pynacl
+      - name: Pubblica i reel arrivati all'ora
+        run: python pubblica.py
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          REPO: ${{ github.repository }}
