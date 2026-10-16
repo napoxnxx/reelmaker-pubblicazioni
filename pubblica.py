@@ -170,6 +170,124 @@ def pubblica(r, token, uid, indirizzi):
         return ""
 
 
+# ------------------------------------------------------------ storie
+FINESTRA_STORIE = dt.timedelta(hours=6)      # una storia in ritardo di più di 6 ore la salto
+
+
+def _fuso(imp):
+    try:
+        from zoneinfo import ZoneInfo
+        return ZoneInfo(imp.get("fuso") or "Europe/Rome")
+    except Exception:  # noqa: BLE001
+        return dt.timezone(dt.timedelta(hours=1))
+
+
+def ricicla_storie(tutte, imp, cambiati):
+    """Campagna finita e PC spento: rimetto in programma le storie uscite da più tempo."""
+    if not imp.get("attive") or any(s.get("stato") == "programmata" for _, s in tutte):
+        return
+    usabili = [(f, s) for f, s in tutte if s.get("stato") in ("pubblicata", "saltata")]
+    if not usabili:
+        return
+    orari = []
+    for o in imp.get("orari") or ["10:00", "18:30"]:
+        try:
+            h, m = (int(x) for x in o.split(":"))
+            orari.append(dt.time(h, m))
+        except ValueError:
+            pass
+    fuso = _fuso(imp)
+    ora_locale = ADESSO.astimezone(fuso)
+    slot, giorno = [], ora_locale.date()
+    while len(slot) < min(len(usabili), len(orari) * 7):
+        for o in sorted(orari):
+            t = dt.datetime.combine(giorno, o, tzinfo=fuso)
+            if t > ora_locale and len(slot) < min(len(usabili), len(orari) * 7):
+                slot.append(t)
+        giorno += dt.timedelta(days=1)
+    usabili.sort(key=lambda x: x[1].get("pubblicata_il") or x[1].get("quando", ""))
+    for (f, s), t in zip(usabili, slot):
+        s.update(stato="programmata", quando=t.isoformat(timespec="minutes"), tentativi=0,
+                 errore="", riciclata=s.get("riciclata", 0) + 1)
+        scrivi(f, s)
+        cambiati.append(str(f))
+    log(f"Storie riciclate: {len(slot)}")
+
+
+def pubblica_storia(s, token, uid, indirizzi):
+    versione = s.get("versione_api") or "v23.0"
+    errori = []
+    for base in indirizzi:
+        if not base:
+            continue
+        url = base.rstrip("/") + "/" + s["file"]
+        try:
+            v = requests.get(url, headers={"Range": "bytes=0-1023"}, timeout=60)
+            if v.status_code not in (200, 206):
+                raise Errore(f"l'immagine non è online ({v.status_code})")
+            cid = _check(requests.post(f"{IG_API}/{versione}/{uid}/media", timeout=120, data={
+                "media_type": "STORIES", "image_url": url, "access_token": token}))["id"]
+            for _ in range(60):
+                st = _check(requests.get(f"{IG_API}/{versione}/{cid}", timeout=30, params={
+                    "fields": "status_code,status", "access_token": token}))
+                if st.get("status_code") in ("FINISHED", None):
+                    break
+                if st.get("status_code") in ("ERROR", "EXPIRED"):
+                    raise Errore(f"Instagram ha rifiutato l'immagine: {st.get('status')}")
+                time.sleep(3)
+            pub = _check(requests.post(f"{IG_API}/{versione}/{uid}/media_publish", timeout=60,
+                                       data={"creation_id": cid, "access_token": token}))
+            return pub.get("id", "")
+        except Exception as e:  # noqa: BLE001
+            log(f"{url}: {e}")
+            errori.append(str(e))
+            if "token" in str(e).lower():
+                break
+    raise Errore(" | ".join(errori) or "nessun indirizzo dell'immagine")
+
+
+def storie(token, uid, indirizzi, cambiati):
+    imp = leggi("impostazioni_storie.json") if Path("impostazioni_storie.json").exists() else {}
+    tutte = [(f, leggi(f)) for f in sorted(Path("storie").glob("*.json"))]
+    if not tutte:
+        return
+    ricicla_storie(tutte, imp, cambiati)
+    for f, s in tutte:
+        if s.get("stato") == "in_pubblicazione":
+            # un giro precedente si è interrotto: meglio una storia in meno che una doppia
+            s.update(stato="pubblicata", pubblicata_il=ADESSO.isoformat(), nota="interrotta")
+            scrivi(f, s)
+            cambiati.append(str(f))
+            continue
+        if s.get("stato") != "programmata" or s.get("tentativi", 0) >= 4:
+            continue
+        quando = dt.datetime.fromisoformat(s["quando"])
+        if quando.tzinfo is None:
+            quando = quando.replace(tzinfo=dt.timezone.utc)
+        if quando > ADESSO:
+            continue
+        if ADESSO - quando > FINESTRA_STORIE:
+            s.update(stato="saltata")
+            scrivi(f, s)
+            cambiati.append(str(f))
+            continue
+        if not token or not uid:
+            return
+        s["stato"] = "in_pubblicazione"
+        scrivi(f, s)
+        if not salva_su_github([str(f)], f"Storia {f.stem}"):
+            continue
+        try:
+            s.update(stato="pubblicata", media_id=pubblica_storia(s, token, uid, indirizzi),
+                     pubblicata_il=ADESSO.isoformat(), errore="")
+            log(f"Storia pubblicata: {f.stem}")
+        except Exception as e:  # noqa: BLE001
+            s.update(stato="programmata", tentativi=s.get("tentativi", 0) + 1, errore=str(e)[:300])
+            log(f"Storia non pubblicata {f.stem}: {e}")
+        scrivi(f, s)
+        cambiati.append(str(f))
+
+
 def main():
     cambiati = []
     cfg = leggi("impostazioni.json") if Path("impostazioni.json").exists() else {}
@@ -214,6 +332,10 @@ def main():
             log(f"Non pubblicato {f.stem}: {e}")
         scrivi(f, r)
         cambiati.append(str(f))
+    try:
+        storie(token, uid, indirizzi, cambiati)
+    except Exception as e:  # noqa: BLE001
+        log(f"Storie: {e}")
     # una volta al giorno lascio un segno: GitHub non spegne i controlli dei progetti attivi
     vivo = Path("stato/ultimo_controllo.json")
     if not vivo.exists() or leggi(vivo).get("giorno") != ADESSO.date().isoformat():
