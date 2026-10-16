@@ -1,0 +1,8 @@
+{
+ "attive": true,
+ "orari": [
+  "10:00",
+  "18:30"
+ ],
+ "fuso": "Europe/Rome"
+}
