@@ -1,0 +1,17 @@
+{
+ "id": "20261026-1830-fba8be",
+ "file": "s/20261026-1830-fba8be.jpg",
+ "quando": "2026-10-26T18:30+01:00",
+ "stato": "programmata",
+ "tipo": "lista",
+ "titolo": "Quali feste intervistiamo",
+ "sottotitolo": "Se c'è qualcosa da festeggiare, il microfono è pronto.",
+ "punti": [
+  "Diciottesimi e compleanni",
+  "Matrimoni e anniversari",
+  "Comunioni, cresime e lauree"
+ ],
+ "cta": "DM con data e tipo di festa",
+ "tentativi": 0,
+ "versione_api": "v26.0"
+}

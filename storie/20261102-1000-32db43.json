@@ -1,0 +1,17 @@
+{
+ "id": "20261102-1000-32db43",
+ "file": "s/20261102-1000-32db43.jpg",
+ "quando": "2026-11-02T10:00+01:00",
+ "stato": "programmata",
+ "tipo": "lista",
+ "titolo": "Per il tuo 18 serve",
+ "sottotitolo": "La ricetta è semplice, abbiamo già pensato a un ingrediente.",
+ "punti": [
+  "Amici pronti a ridere",
+  "Una data da segnare",
+  "Noi con il microfono"
+ ],
+ "cta": "Scrivici in DM con la data",
+ "tentativi": 0,
+ "versione_api": "v26.0"
+}
