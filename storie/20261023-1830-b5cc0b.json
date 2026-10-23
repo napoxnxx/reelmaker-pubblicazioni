@@ -2,12 +2,15 @@
  "id": "20261023-1830-b5cc0b",
  "file": "s/20261023-1830-b5cc0b.jpg",
  "quando": "2026-10-23T18:30+02:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "fotogramma",
  "titolo": "Per la serata perfetta serve...",
  "sottotitolo": "Lo chiediamo a tutti gli invitati e ogni risposta è più assurda della precedente.",
  "punti": [],
  "cta": "Mandaci un DM con la data",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18086709440315041",
+ "pubblicata_il": "2026-10-23T16:30:57.915328+00:00",
+ "errore": ""
 }
