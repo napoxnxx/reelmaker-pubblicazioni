@@ -2,12 +2,15 @@
  "id": "20261024-1830-1d638b",
  "file": "s/20261024-1830-1d638b.jpg",
  "quando": "2026-10-24T18:30+02:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "fotogramma",
  "titolo": "Gli invitati diventano protagonisti",
  "sottotitolo": "Ognuno ha il suo momento davanti al microfono. Anche chi giura di essere timido.",
  "punti": [],
  "cta": "Rispondi con la data della festa",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18101739401632064",
+ "pubblicata_il": "2026-10-24T16:30:45.922759+00:00",
+ "errore": ""
 }
