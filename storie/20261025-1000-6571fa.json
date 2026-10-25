@@ -2,12 +2,15 @@
  "id": "20261025-1000-6571fa",
  "file": "s/20261025-1000-6571fa.jpg",
  "quando": "2026-10-25T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "Un compleanno senza reel? Peccato",
  "sottotitolo": "Tra qualche mese ti ricorderai la torta, ma le risposte degli amici valgono di più.",
  "punti": [],
  "cta": "Scrivici in DM con la data",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18136196455677002",
+ "pubblicata_il": "2026-10-25T09:01:07.449837+00:00",
+ "errore": ""
 }
