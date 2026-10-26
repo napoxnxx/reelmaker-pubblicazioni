@@ -2,7 +2,7 @@
  "id": "20261026-1830-fba8be",
  "file": "s/20261026-1830-fba8be.jpg",
  "quando": "2026-10-26T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "Quali feste intervistiamo",
  "sottotitolo": "Se c'è qualcosa da festeggiare, il microfono è pronto.",
@@ -13,5 +13,8 @@
  ],
  "cta": "DM con data e tipo di festa",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18391315735228825",
+ "pubblicata_il": "2026-10-26T17:30:51.923235+00:00",
+ "errore": ""
 }
