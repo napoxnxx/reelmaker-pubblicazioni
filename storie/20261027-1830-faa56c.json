@@ -2,12 +2,15 @@
  "id": "20261027-1830-faa56c",
  "file": "s/20261027-1830-faa56c.jpg",
  "quando": "2026-10-27T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "Genitori, tranquilli: ci pensiamo noi",
  "sottotitolo": "Voi godetevi la festa, noi intervistiamo gli invitati. Domande assurde, sempre con garbo.",
  "punti": [],
  "cta": "Scrivici in DM con la data",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18208738837373658",
+ "pubblicata_il": "2026-10-27T17:30:53.525039+00:00",
+ "errore": ""
 }
