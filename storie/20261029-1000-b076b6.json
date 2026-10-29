@@ -2,7 +2,7 @@
  "id": "20261029-1000-b076b6",
  "file": "s/20261029-1000-b076b6.jpg",
  "quando": "2026-10-29T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "I nostri format",
  "sottotitolo": "Ogni festa ha il suo mix. Scegliamo insieme quelli giusti per voi.",
@@ -13,5 +13,8 @@
  ],
  "cta": "Rispondi a questa storia",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "17988648606094183",
+ "pubblicata_il": "2026-10-29T09:01:06.095262+00:00",
+ "errore": ""
 }
