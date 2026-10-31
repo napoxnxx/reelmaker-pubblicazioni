@@ -2,7 +2,7 @@
  "id": "20261031-1000-251bb4",
  "file": "s/20261031-1000-251bb4.jpg",
  "quando": "2026-10-31T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "Come prenotare",
  "sottotitolo": "Tre passaggi e la tua festa ha il suo momento comico.",
@@ -13,5 +13,8 @@
  ],
  "cta": "Scrivici in DM con la data",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18103386191564348",
+ "pubblicata_il": "2026-10-31T09:00:57.698415+00:00",
+ "errore": ""
 }
