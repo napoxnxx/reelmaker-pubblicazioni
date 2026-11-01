@@ -2,12 +2,15 @@
  "id": "20261101-1000-41ad4e",
  "file": "s/20261101-1000-41ad4e.jpg",
  "quando": "2026-11-01T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "fotogramma",
  "titolo": "Il ricordo che resta dopo la festa",
  "sottotitolo": "Le foto finiscono in galleria, ma le battute degli amici al microfono le rivedi per sempre.",
  "punti": [],
  "cta": "Scrivici in DM con la data",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18132904709499404",
+ "pubblicata_il": "2026-11-01T09:00:59.860723+00:00",
+ "errore": ""
 }
