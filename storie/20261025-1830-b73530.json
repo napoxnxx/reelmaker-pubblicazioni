@@ -1,8 +1,8 @@
 {
  "id": "20261025-1830-b73530",
  "file": "s/20261025-1830-b73530.jpg",
- "quando": "2026-10-25T18:30+01:00",
- "stato": "pubblicata",
+ "quando": "2026-11-06T18:30+01:00",
+ "stato": "programmata",
  "tipo": "lista",
  "titolo": "Perché la ricorderai",
  "sottotitolo": "Una festa con le interviste si racconta ancora per un bel po'.",
@@ -16,5 +16,6 @@
  "versione_api": "v26.0",
  "media_id": "18012680612766355",
  "pubblicata_il": "2026-10-25T17:30:44.600240+00:00",
- "errore": ""
+ "errore": "",
+ "riciclata": 1
 }

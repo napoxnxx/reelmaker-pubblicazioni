@@ -1,8 +1,8 @@
 {
  "id": "20261021-1830-ebb54f",
  "file": "s/20261021-1830-ebb54f.jpg",
- "quando": "2026-10-21T18:30+02:00",
- "stato": "pubblicata",
+ "quando": "2026-11-03T18:30+01:00",
+ "stato": "programmata",
  "tipo": "fotogramma",
  "titolo": "Gli auguri in tutte le lingue",
  "sottotitolo": "Dalla dedica in spagnolo allo scioglilingua: i tuoi invitati si mettono alla prova.",
@@ -12,5 +12,6 @@
  "versione_api": "v26.0",
  "media_id": "18169365682412416",
  "pubblicata_il": "2026-10-21T16:30:53.480997+00:00",
- "errore": ""
+ "errore": "",
+ "riciclata": 1
 }

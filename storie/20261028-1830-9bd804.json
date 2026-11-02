@@ -1,8 +1,8 @@
 {
  "id": "20261028-1830-9bd804",
  "file": "s/20261028-1830-9bd804.jpg",
- "quando": "2026-10-28T18:30+01:00",
- "stato": "pubblicata",
+ "quando": "2026-11-08T18:30+01:00",
+ "stato": "programmata",
  "tipo": "testo",
  "titolo": "Non siamo il fotografo",
  "sottotitolo": "Niente pose. Solo microfono, domande strane e gente che non sa cosa rispondere.",
@@ -12,5 +12,6 @@
  "versione_api": "v26.0",
  "media_id": "18129024781795656",
  "pubblicata_il": "2026-10-28T17:32:02.856897+00:00",
- "errore": ""
+ "errore": "",
+ "riciclata": 1
 }
