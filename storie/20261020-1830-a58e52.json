@@ -2,7 +2,7 @@
  "id": "20261020-1830-a58e52",
  "file": "s/20261020-1830-a58e52.jpg",
  "quando": "2026-11-02T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "Cosa succede alla festa",
  "sottotitolo": "Niente di complicato: un microfono e tanti invitati da far parlare.",
@@ -14,8 +14,8 @@
  "cta": "Mandaci un DM con la data",
  "tentativi": 0,
  "versione_api": "v26.0",
- "media_id": "17955896277255769",
- "pubblicata_il": "2026-10-20T16:31:00.808363+00:00",
+ "media_id": "18036037217671989",
+ "pubblicata_il": "2026-11-02T17:30:58.253421+00:00",
  "errore": "",
  "riciclata": 1
 }
