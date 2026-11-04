@@ -2,7 +2,7 @@
  "id": "20261022-1830-17a94a",
  "file": "s/20261022-1830-17a94a.jpg",
  "quando": "2026-11-04T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "Fai 18 anni?",
  "sottotitolo": "Allora la tua festa merita più di un brindisi. Merita un microfono e amici senza filtri.",
@@ -10,8 +10,8 @@
  "cta": "Rispondi a questa storia",
  "tentativi": 0,
  "versione_api": "v26.0",
- "media_id": "18199622116388719",
- "pubblicata_il": "2026-10-22T16:30:51.900326+00:00",
+ "media_id": "18083279135368427",
+ "pubblicata_il": "2026-11-04T09:01:03.561801+00:00",
  "errore": "",
  "riciclata": 1
 }
