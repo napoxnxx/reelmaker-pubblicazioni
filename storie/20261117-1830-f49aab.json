@@ -1,0 +1,17 @@
+{
+ "id": "20261117-1830-f49aab",
+ "file": "s/20261117-1830-f49aab.jpg",
+ "quando": "2026-11-17T18:30+01:00",
+ "stato": "programmata",
+ "tipo": "lista",
+ "titolo": "La data è già fissata?",
+ "sottotitolo": "Allora siamo ancora in tempo per metterci d'accordo.",
+ "punti": [
+  "Scrivici in DM la data",
+  "Dicci che festa è",
+  "Al resto pensiamo noi"
+ ],
+ "cta": "Scrivici la data in DM",
+ "tentativi": 0,
+ "versione_api": "v26.0"
+}

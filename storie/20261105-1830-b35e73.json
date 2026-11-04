@@ -1,0 +1,17 @@
+{
+ "id": "20261105-1830-b35e73",
+ "file": "s/20261105-1830-b35e73.jpg",
+ "quando": "2026-11-05T18:30+01:00",
+ "stato": "programmata",
+ "tipo": "lista",
+ "titolo": "Le feste che intervistiamo",
+ "sottotitolo": "Diciottesimi in testa, ma non solo.",
+ "punti": [
+  "Diciottesimi e compleanni",
+  "Matrimoni e anniversari",
+  "Comunioni, cresime e lauree"
+ ],
+ "cta": "DM con la data della festa",
+ "tentativi": 0,
+ "versione_api": "v26.0"
+}
