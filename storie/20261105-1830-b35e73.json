@@ -2,7 +2,7 @@
  "id": "20261105-1830-b35e73",
  "file": "s/20261105-1830-b35e73.jpg",
  "quando": "2026-11-05T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "Le feste che intervistiamo",
  "sottotitolo": "Diciottesimi in testa, ma non solo.",
@@ -13,5 +13,8 @@
  ],
  "cta": "DM con la data della festa",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18090564632275807",
+ "pubblicata_il": "2026-11-05T17:30:49.925921+00:00",
+ "errore": ""
 }
