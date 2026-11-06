@@ -2,12 +2,15 @@
  "id": "20261106-1830-0c5ff2",
  "file": "s/20261106-1830-0c5ff2.jpg",
  "quando": "2026-11-06T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "Matrimonio: intervistiamo anche voi",
  "sottotitolo": "Auguri agli sposi dagli invitati, con il microfono e senza copione. Si ride e ci si commuove.",
  "punti": [],
  "cta": "Scrivici la data in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18092015363681513",
+ "pubblicata_il": "2026-11-06T17:30:50.535841+00:00",
+ "errore": ""
 }
