@@ -2,12 +2,15 @@
  "id": "20261106-1000-39dd1e",
  "file": "s/20261106-1000-39dd1e.jpg",
  "quando": "2026-11-06T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "fotogramma",
  "titolo": "Laurea? Gli amici hanno da dire",
  "sottotitolo": "Dediche, auguri e qualche verità scomoda sul neo dottore o la neo dottoressa.",
  "punti": [],
  "cta": "DM con la data della laurea",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18113654780143966",
+ "pubblicata_il": "2026-11-06T09:01:02.632564+00:00",
+ "errore": ""
 }
