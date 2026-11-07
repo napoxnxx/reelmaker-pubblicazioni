@@ -2,12 +2,15 @@
  "id": "20261107-1830-302c8d",
  "file": "s/20261107-1830-302c8d.jpg",
  "quando": "2026-11-07T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "fotogramma",
  "titolo": "Auguri in francese, che disastro",
  "sottotitolo": "Dedica in lingua straniera: pronuncia ardita, entusiasmo garantito.",
  "punti": [],
  "cta": "Mandaci la data in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18129951568915625",
+ "pubblicata_il": "2026-11-07T17:30:47.419299+00:00",
+ "errore": ""
 }
