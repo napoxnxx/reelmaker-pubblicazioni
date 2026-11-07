@@ -2,12 +2,15 @@
  "id": "20261107-1000-3d2625",
  "file": "s/20261107-1000-3d2625.jpg",
  "quando": "2026-11-07T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "Anniversario? Raccontate la vostra storia",
  "sottotitolo": "Amici e famiglia fanno gli auguri alla coppia davanti al microfono. Tra ricordi e risate.",
  "punti": [],
  "cta": "Scrivici la data in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18142576249614723",
+ "pubblicata_il": "2026-11-07T09:00:59.463677+00:00",
+ "errore": ""
 }
