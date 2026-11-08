@@ -2,12 +2,15 @@
  "id": "20261108-1830-529b32",
  "file": "s/20261108-1830-529b32.jpg",
  "quando": "2026-11-08T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "fotogramma",
  "titolo": "Dedica in spagnolo per il festeggiato",
  "sottotitolo": "Gli invitati si improvvisano poliglotti. I risultati sono imprevedibili.",
  "punti": [],
  "cta": "Rispondi a questa storia",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18055237358816030",
+ "pubblicata_il": "2026-11-08T17:30:47.201924+00:00",
+ "errore": ""
 }
