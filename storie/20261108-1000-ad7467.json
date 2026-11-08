@@ -2,7 +2,7 @@
  "id": "20261108-1000-ad7467",
  "file": "s/20261108-1000-ad7467.jpg",
  "quando": "2026-11-08T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "Cosa portiamo alla tua festa",
  "sottotitolo": "Poche cose, ma quelle giuste per far ridere tutti.",
@@ -13,5 +13,8 @@
  ],
  "cta": "Scrivici la data in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "17918852277265850",
+ "pubblicata_il": "2026-11-08T09:00:56.364600+00:00",
+ "errore": ""
 }
