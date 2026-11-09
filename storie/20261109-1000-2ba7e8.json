@@ -2,12 +2,15 @@
  "id": "20261109-1000-2ba7e8",
  "file": "s/20261109-1000-2ba7e8.jpg",
  "quando": "2026-11-09T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "Diciottesimo in arrivo?",
  "sottotitolo": "Il 18 si fa una volta sola. Fatelo ricordare con un reel che fa ridere davvero.",
  "punti": [],
  "cta": "Scrivici la data in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18105207308377188",
+ "pubblicata_il": "2026-11-09T09:01:01.625435+00:00",
+ "errore": ""
 }
