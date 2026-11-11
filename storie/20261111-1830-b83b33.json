@@ -2,12 +2,15 @@
  "id": "20261111-1830-b83b33",
  "file": "s/20261111-1830-b83b33.jpg",
  "quando": "2026-11-11T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "Il format è semplice",
  "sottotitolo": "Noi, un microfono e i tuoi invitati. Il resto lo fanno loro, tra imbarazzo e risate.",
  "punti": [],
  "cta": "Mandaci la data in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18152175268522577",
+ "pubblicata_il": "2026-11-11T17:30:42.983934+00:00",
+ "errore": ""
 }
