@@ -2,7 +2,7 @@
  "id": "20261112-1830-48ed32",
  "file": "s/20261112-1830-48ed32.jpg",
  "quando": "2026-11-12T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "Cosa raccogliamo alla festa",
  "sottotitolo": "Il meglio degli invitati, in un solo reel.",
@@ -13,5 +13,8 @@
  ],
  "cta": "Scrivici la data in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18101445185440707",
+ "pubblicata_il": "2026-11-12T17:30:48.563464+00:00",
+ "errore": ""
 }
