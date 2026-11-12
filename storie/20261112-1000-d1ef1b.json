@@ -2,12 +2,15 @@
  "id": "20261112-1000-d1ef1b",
  "file": "s/20261112-1000-d1ef1b.jpg",
  "quando": "2026-11-12T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "fotogramma",
  "titolo": "Gli invitati sono i protagonisti",
  "sottotitolo": "Amici e parenti davanti al microfono: nessuno ne esce serio.",
  "punti": [],
  "cta": "DM con data e tipo di festa",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "17960649381260242",
+ "pubblicata_il": "2026-11-12T09:00:54.332793+00:00",
+ "errore": ""
 }
