@@ -2,12 +2,15 @@
  "id": "20261113-1000-561b9a",
  "file": "s/20261113-1000-561b9a.jpg",
  "quando": "2026-11-13T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "Organizzi tu la festa? Parliamone",
  "sottotitolo": "Che tu sia il festeggiato, un genitore o un amico, portiamo il microfono e un sacco di risate.",
  "punti": [],
  "cta": "Scrivici in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18032124128869960",
+ "pubblicata_il": "2026-11-13T09:01:00.628221+00:00",
+ "errore": ""
 }
