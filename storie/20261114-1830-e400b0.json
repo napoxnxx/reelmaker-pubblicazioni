@@ -2,7 +2,7 @@
  "id": "20261114-1830-e400b0",
  "file": "s/20261114-1830-e400b0.jpg",
  "quando": "2026-11-14T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "Perché prenotarci",
  "sottotitolo": "Tre buoni motivi per avere il microfono alla tua festa.",
@@ -13,5 +13,8 @@
  ],
  "cta": "Scrivici in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18091690832694157",
+ "pubblicata_il": "2026-11-14T17:30:46.444567+00:00",
+ "errore": ""
 }
