@@ -2,12 +2,15 @@
  "id": "20261115-1830-c93ac1",
  "file": "s/20261115-1830-c93ac1.jpg",
  "quando": "2026-11-15T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "Genitori, la festa è dei ragazzi",
  "sottotitolo": "Voi organizzate, noi facciamo ridere i loro amici. E ne esce un bel ricordo per tutti.",
  "punti": [],
  "cta": "Scrivici in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18155198077557667",
+ "pubblicata_il": "2026-11-15T17:30:45.463402+00:00",
+ "errore": ""
 }
