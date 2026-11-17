@@ -2,7 +2,7 @@
  "id": "20261117-1830-f49aab",
  "file": "s/20261117-1830-f49aab.jpg",
  "quando": "2026-11-17T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "La data è già fissata?",
  "sottotitolo": "Allora siamo ancora in tempo per metterci d'accordo.",
@@ -13,5 +13,8 @@
  ],
  "cta": "Scrivici la data in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18037565264895923",
+ "pubblicata_il": "2026-11-17T17:31:01.191089+00:00",
+ "errore": ""
 }
