@@ -1,8 +1,8 @@
 {
  "id": "20261030-1830-6c9d45",
  "file": "s/20261030-1830-6c9d45.jpg",
- "quando": "2026-10-30T18:30+01:00",
- "stato": "pubblicata",
+ "quando": "2026-11-19T18:30+01:00",
+ "stato": "programmata",
  "tipo": "lista",
  "titolo": "Cosa scriverci in DM",
  "sottotitolo": "Bastano poche righe per iniziare, poi ti rispondiamo noi.",
@@ -16,5 +16,6 @@
  "versione_api": "v26.0",
  "media_id": "17887527834688860",
  "pubblicata_il": "2026-10-30T17:30:52.130304+00:00",
- "errore": ""
+ "errore": "",
+ "riciclata": 1
 }

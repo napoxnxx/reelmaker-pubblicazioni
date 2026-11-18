@@ -1,8 +1,8 @@
 {
  "id": "20261105-1000-550af7",
  "file": "s/20261105-1000-550af7.jpg",
- "quando": "2026-11-05T10:00+01:00",
- "stato": "pubblicata",
+ "quando": "2026-11-25T10:00+01:00",
+ "stato": "programmata",
  "tipo": "fotogramma",
  "titolo": "La festa finisce, il reel resta",
  "sottotitolo": "Il giorno dopo sei ancora lì a rivedere gli invitati e a ridere da solo.",
@@ -12,5 +12,6 @@
  "versione_api": "v26.0",
  "media_id": "17993100632860962",
  "pubblicata_il": "2026-11-05T09:01:03.737196+00:00",
- "errore": ""
+ "errore": "",
+ "riciclata": 1
 }

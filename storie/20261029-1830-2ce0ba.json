@@ -1,8 +1,8 @@
 {
  "id": "20261029-1830-2ce0ba",
  "file": "s/20261029-1830-2ce0ba.jpg",
- "quando": "2026-10-29T18:30+01:00",
- "stato": "pubblicata",
+ "quando": "2026-11-18T18:30+01:00",
+ "stato": "programmata",
  "tipo": "fotogramma",
  "titolo": "Scioglilingua: sfida impossibile",
  "sottotitolo": "Sembra facile finché non hai il microfono davanti e tutti gli amici che ti guardano.",
@@ -12,5 +12,6 @@
  "versione_api": "v26.0",
  "media_id": "18171692341463950",
  "pubblicata_il": "2026-10-29T17:30:52.011811+00:00",
- "errore": ""
+ "errore": "",
+ "riciclata": 1
 }

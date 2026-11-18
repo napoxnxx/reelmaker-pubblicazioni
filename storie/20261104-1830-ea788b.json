@@ -1,8 +1,8 @@
 {
  "id": "20261104-1830-ea788b",
  "file": "s/20261104-1830-ea788b.jpg",
- "quando": "2026-11-04T18:30+01:00",
- "stato": "pubblicata",
+ "quando": "2026-11-24T18:30+01:00",
+ "stato": "programmata",
  "tipo": "fotogramma",
  "titolo": "Il festeggiato è un cagnolino obbediente?",
  "sottotitolo": "Gli amici rispondono senza pietà. Lui fa finta di niente.",
@@ -12,5 +12,6 @@
  "versione_api": "v26.0",
  "media_id": "18102228968647333",
  "pubblicata_il": "2026-11-04T17:30:51.587262+00:00",
- "errore": ""
+ "errore": "",
+ "riciclata": 1
 }
