@@ -2,7 +2,7 @@
  "id": "20261030-1000-9824ec",
  "file": "s/20261030-1000-9824ec.jpg",
  "quando": "2026-11-19T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "fotogramma",
  "titolo": "Quanto vale il festeggiato? Chiediamolo agli invitati",
  "sottotitolo": "Le risposte sono sempre più creative delle domande. E il festeggiato deve sentirle tutte.",
@@ -10,8 +10,8 @@
  "cta": "DM con data e tipo di festa",
  "tentativi": 0,
  "versione_api": "v26.0",
- "media_id": "18113310835886902",
- "pubblicata_il": "2026-10-30T09:01:03.664246+00:00",
+ "media_id": "18128774221920523",
+ "pubblicata_il": "2026-11-19T09:01:04.547055+00:00",
  "errore": "",
  "riciclata": 1
 }
