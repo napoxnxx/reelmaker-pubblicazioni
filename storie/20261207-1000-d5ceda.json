@@ -1,0 +1,17 @@
+{
+ "id": "20261207-1000-d5ceda",
+ "file": "s/20261207-1000-d5ceda.jpg",
+ "quando": "2026-12-07T10:00+01:00",
+ "stato": "programmata",
+ "tipo": "lista",
+ "titolo": "Come funziona",
+ "sottotitolo": "",
+ "punti": [
+  "Ci scrivi la data della festa",
+  "Veniamo e intervistiamo gli invitati",
+  "Ricevi i video della serata"
+ ],
+ "cta": "Rispondi a questa storia",
+ "tentativi": 0,
+ "versione_api": "v26.0"
+}

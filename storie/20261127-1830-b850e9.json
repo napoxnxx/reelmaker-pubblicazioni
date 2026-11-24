@@ -1,0 +1,17 @@
+{
+ "id": "20261127-1830-b850e9",
+ "file": "s/20261127-1830-b850e9.jpg",
+ "quando": "2026-11-27T18:30+01:00",
+ "stato": "programmata",
+ "tipo": "lista",
+ "titolo": "Scrivici e dicci",
+ "sottotitolo": "",
+ "punti": [
+  "Che festa è",
+  "La data e il luogo",
+  "Quanti invitati più o meno"
+ ],
+ "cta": "Prenota: scrivici in DM",
+ "tentativi": 0,
+ "versione_api": "v26.0"
+}

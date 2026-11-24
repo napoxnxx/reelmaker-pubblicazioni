@@ -1,0 +1,17 @@
+{
+ "id": "20261201-1000-0cdf65",
+ "file": "s/20261201-1000-0cdf65.jpg",
+ "quando": "2026-12-01T10:00+01:00",
+ "stato": "programmata",
+ "tipo": "lista",
+ "titolo": "Come funziona",
+ "sottotitolo": "",
+ "punti": [
+  "Ci scrivi la data della festa",
+  "Veniamo e intervistiamo gli invitati",
+  "Ricevi i video della serata"
+ ],
+ "cta": "Prenota: scrivici in DM",
+ "tentativi": 0,
+ "versione_api": "v26.0"
+}

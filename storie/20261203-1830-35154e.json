@@ -1,0 +1,17 @@
+{
+ "id": "20261203-1830-35154e",
+ "file": "s/20261203-1830-35154e.jpg",
+ "quando": "2026-12-03T18:30+01:00",
+ "stato": "programmata",
+ "tipo": "lista",
+ "titolo": "Scrivici e dicci",
+ "sottotitolo": "",
+ "punti": [
+  "Che festa è",
+  "La data e il luogo",
+  "Quanti invitati più o meno"
+ ],
+ "cta": "Rispondi a questa storia",
+ "tentativi": 0,
+ "versione_api": "v26.0"
+}
