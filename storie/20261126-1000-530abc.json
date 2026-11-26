@@ -2,12 +2,15 @@
  "id": "20261126-1000-530abc",
  "file": "s/20261126-1000-530abc.jpg",
  "quando": "2026-11-26T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "La festa finisce, il video resta",
  "sottotitolo": "Le interviste ai tuoi invitati diventano reel da riguardare e condividere.",
  "punti": [],
  "cta": "Scrivici in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18654030418018191",
+ "pubblicata_il": "2026-11-26T09:01:50.125504+00:00",
+ "errore": ""
 }
