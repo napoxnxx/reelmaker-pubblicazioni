@@ -2,12 +2,15 @@
  "id": "20261126-1830-e84ff1",
  "file": "s/20261126-1830-e84ff1.jpg",
  "quando": "2026-11-26T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "testo",
  "titolo": "Organizzi una festa?",
  "sottotitolo": "Aggiungi le interviste comiche: gli invitati si divertono e tu hai i video.",
  "punti": [],
  "cta": "Scrivici la data della tua festa",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18064709408803584",
+ "pubblicata_il": "2026-11-26T17:30:51.266458+00:00",
+ "errore": ""
 }
