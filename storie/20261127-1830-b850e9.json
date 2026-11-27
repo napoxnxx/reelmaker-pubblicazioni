@@ -2,7 +2,7 @@
  "id": "20261127-1830-b850e9",
  "file": "s/20261127-1830-b850e9.jpg",
  "quando": "2026-11-27T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "Scrivici e dicci",
  "sottotitolo": "",
@@ -13,5 +13,8 @@
  ],
  "cta": "Prenota: scrivici in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18135481972682560",
+ "pubblicata_il": "2026-11-27T17:30:52.018204+00:00",
+ "errore": ""
 }
