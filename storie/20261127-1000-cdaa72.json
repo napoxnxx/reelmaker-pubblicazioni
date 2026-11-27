@@ -2,12 +2,15 @@
  "id": "20261127-1000-cdaa72",
  "file": "s/20261127-1000-cdaa72.jpg",
  "quando": "2026-11-27T10:00+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "fotogramma",
  "titolo": "Gli auguri più assurdi li fanno i tuoi invitati",
  "sottotitolo": "Dediche, domande strane e risate: il ricordo più divertente della festa.",
  "punti": [],
  "cta": "Prenota: scrivici in DM",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "17909196774606039",
+ "pubblicata_il": "2026-11-27T09:01:07.279900+00:00",
+ "errore": ""
 }
