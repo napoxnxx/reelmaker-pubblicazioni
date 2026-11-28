@@ -2,7 +2,7 @@
  "id": "20261128-1830-d39e14",
  "file": "s/20261128-1830-d39e14.jpg",
  "quando": "2026-11-28T18:30+01:00",
- "stato": "in_pubblicazione",
+ "stato": "pubblicata",
  "tipo": "lista",
  "titolo": "Perfette per",
  "sottotitolo": "",
@@ -13,5 +13,8 @@
  ],
  "cta": "Rispondi a questa storia",
  "tentativi": 0,
- "versione_api": "v26.0"
+ "versione_api": "v26.0",
+ "media_id": "18112566512459914",
+ "pubblicata_il": "2026-11-28T17:30:52.777594+00:00",
+ "errore": ""
 }
